@@ -47,7 +47,7 @@ export async function connectDb(): Promise<typeof mongoose | null> {
         cache.promise = null;
         console.error("[db] MongoDB unavailable:", err instanceof Error ? err.message : err);
         return null;
-      });
+      }) as Promise<typeof mongoose | null>;
   }
 
   return cache.promise;

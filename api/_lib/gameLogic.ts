@@ -9,7 +9,7 @@ import {
   type RoundEvent,
 } from "../../shared/gameRules.js";
 import { connectDb } from "./db.js";
-import { GameModel, type GameDoc } from "./models.js";
+import { GameModel } from "./models.js";
 
 export interface GameEntry {
   title: string;
@@ -167,10 +167,14 @@ async function loadGamesFromDb(choicesCount: number): Promise<GameEntry[] | null
 
   while (games.length < choicesCount) {
     const skip = Math.floor(Math.random() * total);
-    const doc = await GameModel.findOne().skip(skip).lean<GameDoc>();
+    const doc = await GameModel.findOne().skip(skip).lean();
     if (!doc || picked.has(String(doc._id))) continue;
     picked.add(String(doc._id));
-    games.push({ title: doc.title, image: doc.image, legacyId: doc.legacyId });
+    games.push({
+      title: doc.title,
+      image: doc.image,
+      legacyId: doc.legacyId ?? undefined,
+    });
   }
 
   return games;
