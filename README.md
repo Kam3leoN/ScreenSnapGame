@@ -27,6 +27,13 @@ npm run dev
 - Client : http://localhost:5173
 - API : http://localhost:3001
 
+## Déploiement
+
+- **GitHub** : https://github.com/Kam3leoN/ScreenSnapGame
+- **Vercel** : https://snapgame-rho.vercel.app
+
+Configurer sur Vercel les variables `MONGODB_URI` (Atlas) et `GAME_TOKEN_SECRET` pour activer l'API en production.
+
 ## Assets manquants
 
 Placez les captures dans `client/public/snaps/` (noms = champ `image` en base, ex. `sonic_the_hedgehog.png`).

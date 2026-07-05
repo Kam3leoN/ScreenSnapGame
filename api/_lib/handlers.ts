@@ -7,7 +7,7 @@ import type { RoundEvent } from "../../shared/gameRules.js";
 
 export async function getSettings(level: number) {
   await connectDb();
-  const fromDb = await SettingModel.findOne({ level }).lean();
+  const fromDb = await SettingModel.findOne({ level }).lean<SettingDoc>();
   if (fromDb) {
     return {
       level: fromDb.level,

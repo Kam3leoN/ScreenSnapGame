@@ -5,7 +5,7 @@ import {
   type LevelId,
   type RoundEvent,
 } from "../../shared/gameRules.js";
-import { GameModel } from "./models.js";
+import { GameModel, type GameDoc } from "./models.js";
 
 export interface GameTokenPayload {
   level: LevelId;
@@ -134,7 +134,7 @@ export async function generateRound(choicesCount: number): Promise<RoundResult> 
 
   while (games.length < choicesCount) {
     const skip = Math.floor(Math.random() * total);
-    const doc = await GameModel.findOne().skip(skip).lean();
+    const doc = await GameModel.findOne().skip(skip).lean<GameDoc>();
     if (!doc || picked.has(String(doc._id))) continue;
     picked.add(String(doc._id));
     games.push({ title: doc.title, image: doc.image });
