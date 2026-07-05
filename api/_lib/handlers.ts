@@ -2,7 +2,7 @@ import type { LevelId } from "../../shared/gameRules.js";
 import { LEVEL_SETTINGS, validateUsername } from "../../shared/gameRules.js";
 import { connectDb } from "../_lib/db.js";
 import { createGameToken, generateRound, validateScoreSubmission } from "../_lib/gameLogic.js";
-import { ScoreModel, SettingModel } from "../_lib/models.js";
+import { ScoreModel, SettingModel, type SettingDoc } from "../_lib/models.js";
 import type { RoundEvent } from "../../shared/gameRules.js";
 
 export async function getSettings(level: number) {
