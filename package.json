@@ -1,0 +1,37 @@
+{
+  "name": "screensnapgame",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ScreenSnapGame — quiz rétro par capture d'écran",
+  "type": "module",
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "copy:k3ui": "node scripts/copy-k3ui.mjs",
+    "copy:assets": "node scripts/copy-assets.mjs",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "seed": "tsx scripts/seed-from-sql.ts",
+    "dev:server": "tsx watch server/dev.ts",
+    "dev:client": "npm run dev --workspace=client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "npm run copy:assets && npm run build --workspace=client",
+    "postinstall": "npm run copy:k3ui && npm run copy:assets"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "@vercel/node": "^5.0.2",
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.9.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
