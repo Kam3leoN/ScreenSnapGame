@@ -1,3 +1,6 @@
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 import {
   computeSessionScore,
@@ -5,7 +8,24 @@ import {
   type LevelId,
   type RoundEvent,
 } from "../../shared/gameRules.js";
+import { connectDb } from "./db.js";
 import { GameModel, type GameDoc } from "./models.js";
+
+export interface GameEntry {
+  title: string;
+  image: string;
+  legacyId?: number;
+}
+
+let cachedGames: GameEntry[] | null = null;
+
+function loadGamesFromJson(): GameEntry[] {
+  if (cachedGames) return cachedGames;
+  const root = join(dirname(fileURLToPath(import.meta.url)), "../..");
+  const raw = readFileSync(join(root, "data/games.json"), "utf8");
+  cachedGames = JSON.parse(raw) as GameEntry[];
+  return cachedGames;
+}
 
 export interface GameTokenPayload {
   level: LevelId;
@@ -120,29 +140,11 @@ function shuffle<T>(items: T[]): T[] {
   return copy;
 }
 
-/**
- * Tire une manche : 1 bonne réponse + distracteurs uniques.
- */
-export async function generateRound(choicesCount: number): Promise<RoundResult> {
-  const total = await GameModel.countDocuments();
-  if (total < choicesCount) {
-    throw new Error("Pas assez de jeux en base de données.");
-  }
-
-  const picked = new Set<string>();
-  const games: { title: string; image: string }[] = [];
-
-  while (games.length < choicesCount) {
-    const skip = Math.floor(Math.random() * total);
-    const doc = await GameModel.findOne().skip(skip).lean<GameDoc>();
-    if (!doc || picked.has(String(doc._id))) continue;
-    picked.add(String(doc._id));
-    games.push({ title: doc.title, image: doc.image });
-  }
-
-  const correct = games[0];
-  const distractors = shuffle(games.slice(1));
-  const ordered = shuffle([correct, ...distractors]);
+function buildRoundFromGames(games: GameEntry[], choicesCount: number): RoundResult {
+  const pool = shuffle(games);
+  const selected = pool.slice(0, choicesCount);
+  const correct = selected[0];
+  const ordered = shuffle(selected);
   const correctIndex = ordered.findIndex((g) => g.title === correct.title) + 1;
 
   return {
@@ -151,4 +153,43 @@ export async function generateRound(choicesCount: number): Promise<RoundResult> 
     correctIndex,
     answers: ordered.map((g, i) => ({ index: i + 1, title: g.title })),
   };
+}
+
+async function loadGamesFromDb(choicesCount: number): Promise<GameEntry[] | null> {
+  const conn = await connectDb();
+  if (!conn) return null;
+
+  const total = await GameModel.countDocuments();
+  if (total < choicesCount) return null;
+
+  const picked = new Set<string>();
+  const games: GameEntry[] = [];
+
+  while (games.length < choicesCount) {
+    const skip = Math.floor(Math.random() * total);
+    const doc = await GameModel.findOne().skip(skip).lean<GameDoc>();
+    if (!doc || picked.has(String(doc._id))) continue;
+    picked.add(String(doc._id));
+    games.push({ title: doc.title, image: doc.image, legacyId: doc.legacyId });
+  }
+
+  return games;
+}
+
+/**
+ * Tire une manche : 1 bonne réponse + distracteurs uniques.
+ * Utilise MongoDB si disponible, sinon data/games.json embarqué.
+ */
+export async function generateRound(choicesCount: number): Promise<RoundResult> {
+  const fromDb = await loadGamesFromDb(choicesCount);
+  if (fromDb && fromDb.length >= choicesCount) {
+    return buildRoundFromGames(fromDb, choicesCount);
+  }
+
+  const fromJson = loadGamesFromJson();
+  if (fromJson.length < choicesCount) {
+    throw new Error("Pas assez de jeux disponibles.");
+  }
+
+  return buildRoundFromGames(fromJson, choicesCount);
 }

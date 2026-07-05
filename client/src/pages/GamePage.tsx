@@ -28,6 +28,8 @@ export function GamePage() {
     useGameEngine();
   const { play, playTheme, stopTheme } = useGameAudio();
   const [best, setBest] = useState<ScoreEntry | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [roundError, setRoundError] = useState<string | null>(null);
   const [roundActive, setRoundActive] = useState(false);
   const [processing, setProcessing] = useState(false);
   const timerRemainingRef = useRef(0);
@@ -55,19 +57,25 @@ export function GamePage() {
       navigate("/", { replace: true });
       return;
     }
+    setLoadError(null);
     startSession(level)
       .then((session) => init(session))
-      .catch(() => navigate("/", { replace: true }));
+      .catch((err) => {
+        setLoadError(err instanceof Error ? err.message : "Impossible de démarrer la partie.");
+      });
     getBestScore().then(setBest).catch(() => setBest(null));
     playTheme();
     return () => stopTheme();
   }, [level, init, navigate, playTheme, stopTheme]);
 
   useEffect(() => {
-    if (state.settings && !state.round && !state.loading) {
-      void loadRound();
+    if (state.settings && !state.round && !state.loading && !state.gameOver) {
+      setRoundError(null);
+      void loadRound().catch((err) => {
+        setRoundError(err instanceof Error ? err.message : "Impossible de charger une manche.");
+      });
     }
-  }, [state.settings, state.round, state.loading, loadRound]);
+  }, [state.settings, state.round, state.loading, state.gameOver, loadRound]);
 
   useEffect(() => {
     if (state.round && state.settings) {
@@ -139,8 +147,34 @@ export function GamePage() {
     void loadRound();
   }, [useSwitch, loadRound]);
 
+  if (loadError) {
+    return (
+      <div className="container ssg-loading">
+        <p>{loadError}</p>
+        <button type="button" className="btn btn--filled btn--sm ripple" onClick={() => navigate("/")}>
+          Retour à l&apos;accueil
+        </button>
+      </div>
+    );
+  }
+
   if (!state.settings) {
     return <div className="container ssg-loading">Chargement de la partie…</div>;
+  }
+
+  if (roundError && !state.round) {
+    return (
+      <div className="container ssg-loading">
+        <p>{roundError}</p>
+        <button
+          type="button"
+          className="btn btn--filled btn--sm ripple"
+          onClick={() => void loadRound().catch(() => undefined)}
+        >
+          Réessayer
+        </button>
+      </div>
+    );
   }
 
   return (

@@ -16,7 +16,8 @@
     "dev:server": "tsx watch server/dev.ts",
     "dev:client": "npm run dev --workspace=client",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "build": "npm run copy:assets && npm run build --workspace=client",
+    "generate:games": "node scripts/generate-games-json.mjs",
+    "build": "npm run generate:games && npm run copy:assets && npm run build --workspace=client",
     "postinstall": "npm run copy:k3ui && npm run copy:assets"
   },
   "devDependencies": {

@@ -167,8 +167,9 @@ export function useGameEngine() {
     try {
       const round = await fetchRound(state.settings.choices);
       dispatch({ type: "ROUND_LOADED", payload: round });
-    } catch {
+    } catch (err) {
       dispatch({ type: "ROUND_ERROR" });
+      throw err;
     }
   }, [state.settings]);
 

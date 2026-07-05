@@ -1,0 +1,742 @@
+[
+  {
+    "legacyId": 2,
+    "title": "Sonic the Hedgehog",
+    "image": "sonic_the_hedgehog.png"
+  },
+  {
+    "legacyId": 3,
+    "title": "Street of Rage 2",
+    "image": "streets_of_rage_2.png"
+  },
+  {
+    "legacyId": 4,
+    "title": "Baseball Stars 2",
+    "image": "baseball_stars_2.png"
+  },
+  {
+    "legacyId": 5,
+    "title": "Killer Instinct 2",
+    "image": "killer_instinct_2.png"
+  },
+  {
+    "legacyId": 6,
+    "title": "Marvel vs. Capcom 2",
+    "image": "marvel_vs_capcom_2.png"
+  },
+  {
+    "legacyId": 7,
+    "title": "Final Fight 3",
+    "image": "final_fight_3.png"
+  },
+  {
+    "legacyId": 8,
+    "title": "Capcom Sports Club",
+    "image": "capcom_sports_club.png"
+  },
+  {
+    "legacyId": 9,
+    "title": "Street Fighter Alpha 3",
+    "image": "street_fighter_alpha_3.png"
+  },
+  {
+    "legacyId": 10,
+    "title": "X-Men Vs. Street Fighter",
+    "image": "x_men_vs_street_fighter.png"
+  },
+  {
+    "legacyId": 11,
+    "title": "Rezon",
+    "image": "rezon.png"
+  },
+  {
+    "legacyId": 12,
+    "title": "Snow Brothers 3 Magical Adventure",
+    "image": "snow_brothers_3_magical_adventure.png"
+  },
+  {
+    "legacyId": 13,
+    "title": "1941 Counter Attack",
+    "image": "1941_counter_attack.png"
+  },
+  {
+    "legacyId": 14,
+    "title": "Captain Commando",
+    "image": "captain_commando.png"
+  },
+  {
+    "legacyId": 15,
+    "title": "Mega Man the Power Battle",
+    "image": "mega_man_the_power_battle.png"
+  },
+  {
+    "legacyId": 16,
+    "title": "The King of Fighters XI",
+    "image": "the_king_of_fighters_XI.png"
+  },
+  {
+    "legacyId": 17,
+    "title": "The Punisher",
+    "image": "the_punisher.png"
+  },
+  {
+    "legacyId": 18,
+    "title": "Three Wonders",
+    "image": "three_wonders.png"
+  },
+  {
+    "legacyId": 19,
+    "title": "Warriors of Fate",
+    "image": "warriors_of_fate.png"
+  },
+  {
+    "legacyId": 20,
+    "title": "Cadillacs and Dinosaurs",
+    "image": "cadillacs_and_dinosaurs.png"
+  },
+  {
+    "legacyId": 21,
+    "title": "Donkey Kong Jr",
+    "image": "donkey_kong_jr.png"
+  },
+  {
+    "legacyId": 22,
+    "title": "Metal Slug 3",
+    "image": "metal_slug_3.png"
+  },
+  {
+    "legacyId": 23,
+    "title": "Rally Bike",
+    "image": "rally_bike.png"
+  },
+  {
+    "legacyId": 24,
+    "title": "Street Fighter III 3rd Strike",
+    "image": "street fighter_III_3rd_strike.png"
+  },
+  {
+    "legacyId": 25,
+    "title": "Kung Fu Master",
+    "image": "kung_fu_master.png"
+  },
+  {
+    "legacyId": 26,
+    "title": "Warzard",
+    "image": "warzard.png"
+  },
+  {
+    "legacyId": 27,
+    "title": "JoJo's Venture",
+    "image": "jojos_venture.png"
+  },
+  {
+    "legacyId": 28,
+    "title": "Red Earth",
+    "image": "red_earth.png"
+  },
+  {
+    "legacyId": 29,
+    "title": "Vs. Ice Climber",
+    "image": "vs_ice_climber.png"
+  },
+  {
+    "legacyId": 30,
+    "title": "Samurai Shodown Special",
+    "image": "samurai_shodown_special.png"
+  },
+  {
+    "legacyId": 31,
+    "title": "Garou Mark: of the Wolves.png",
+    "image": "garou_mark_of_the_wolves.png"
+  },
+  {
+    "legacyId": 32,
+    "title": "Ghost Pilots",
+    "image": "ghost_pilots.png"
+  },
+  {
+    "legacyId": 33,
+    "title": "Windjammers",
+    "image": "windjammers.png"
+  },
+  {
+    "legacyId": 34,
+    "title": "Donkey Kong 3",
+    "image": "donkey_kong_3.png"
+  },
+  {
+    "legacyId": 35,
+    "title": "Donkey Kong",
+    "image": "donkey_kong.png"
+  },
+  {
+    "legacyId": 36,
+    "title": "Solomon's Key",
+    "image": "solomons_key.png"
+  },
+  {
+    "legacyId": 37,
+    "title": "'88 Games",
+    "image": "88_games.png"
+  },
+  {
+    "legacyId": 38,
+    "title": "Alex Kidd : the Lost Stars",
+    "image": "alex_kidd_the_lost_stars.png"
+  },
+  {
+    "legacyId": 39,
+    "title": "Alien 3 : The Gun",
+    "image": "alien_3_the_gun.png"
+  },
+  {
+    "legacyId": 40,
+    "title": "Alligator Hunt",
+    "image": "alligator_hunt.png"
+  },
+  {
+    "legacyId": 41,
+    "title": "Bomb Jack",
+    "image": "bombjack.png"
+  },
+  {
+    "legacyId": 42,
+    "title": "Prince of Persia",
+    "image": "prince_of_persia.png"
+  },
+  {
+    "legacyId": 43,
+    "title": "Virtua Racing",
+    "image": "virtua_racing.png"
+  },
+  {
+    "legacyId": 44,
+    "title": "Kirby's Dream Land 3",
+    "image": "kirbys_dreamland_3.png"
+  },
+  {
+    "legacyId": 45,
+    "title": "Cobra Triangle",
+    "image": "cobra_triangle.png"
+  },
+  {
+    "legacyId": 46,
+    "title": "Mike Tyson's Punch-Out!!",
+    "image": "mike_tysons_punch_out.png"
+  },
+  {
+    "legacyId": 47,
+    "title": "Racing Beat",
+    "image": "racing_beat.png"
+  },
+  {
+    "legacyId": 48,
+    "title": "Punk Shot",
+    "image": "punk_shot.png"
+  },
+  {
+    "legacyId": 49,
+    "title": "Magical Drop III",
+    "image": "magical_drop_III.png"
+  },
+  {
+    "legacyId": 50,
+    "title": "Tiger Road",
+    "image": "tiger_road.png"
+  },
+  {
+    "legacyId": 51,
+    "title": "Breakers Revenge",
+    "image": "breakers_revenge.png"
+  },
+  {
+    "legacyId": 52,
+    "title": "Chuka Taisen",
+    "image": "chuka_taisen.png"
+  },
+  {
+    "legacyId": 53,
+    "title": "Real Bout Fatal Fury Special",
+    "image": "real_bout_fatal_fury_special.png"
+  },
+  {
+    "legacyId": 54,
+    "title": "Duck Hunt",
+    "image": "duck_hunt.png"
+  },
+  {
+    "legacyId": 55,
+    "title": "RoboCop",
+    "image": "robocop.png"
+  },
+  {
+    "legacyId": 56,
+    "title": "Double Axle",
+    "image": "double_axle.png"
+  },
+  {
+    "legacyId": 57,
+    "title": "The Gladiator",
+    "image": "the_gladiator.png"
+  },
+  {
+    "legacyId": 58,
+    "title": "Sokonuke Taisen Game",
+    "image": "sokonuke_taisen_game.png"
+  },
+  {
+    "legacyId": 59,
+    "title": "World Heroes 2 Jet",
+    "image": "world_heroes_2_jet.png"
+  },
+  {
+    "legacyId": 60,
+    "title": "Super Mario World",
+    "image": "super_mario_world.png"
+  },
+  {
+    "legacyId": 61,
+    "title": "Chrono Trigger",
+    "image": "chrono_trigger.png"
+  },
+  {
+    "legacyId": 62,
+    "title": "Pocket Gals V.I.P",
+    "image": "pocket_gals_vip.png"
+  },
+  {
+    "legacyId": 63,
+    "title": "Megaman X ",
+    "image": "megaman_x.png"
+  },
+  {
+    "legacyId": 64,
+    "title": "The Mask",
+    "image": "the_mask.png"
+  },
+  {
+    "legacyId": 65,
+    "title": "Metal Max 2",
+    "image": "metal_max_2.png"
+  },
+  {
+    "legacyId": 66,
+    "title": "Mickey to Donald - Magical Adventure 3",
+    "image": "mickey_to_donald_magical_adventure_3.png"
+  },
+  {
+    "legacyId": 67,
+    "title": "Cool Spot",
+    "image": "cool_spot.png"
+  },
+  {
+    "legacyId": 68,
+    "title": "Aladdin",
+    "image": "aladdin.png"
+  },
+  {
+    "legacyId": 69,
+    "title": "ActRaiser",
+    "image": "actraiser.png"
+  },
+  {
+    "legacyId": 70,
+    "title": "Asterix",
+    "image": "asterix.png"
+  },
+  {
+    "legacyId": 71,
+    "title": "Batman Returns",
+    "image": "batman_returns.png"
+  },
+  {
+    "legacyId": 72,
+    "title": "Battle Soccer 2",
+    "image": "battle_soccer_2.png"
+  },
+  {
+    "legacyId": 73,
+    "title": "Beauty and the Beast",
+    "image": "beauty_and_the_beast.png"
+  },
+  {
+    "legacyId": 74,
+    "title": "Bonkers",
+    "image": "bonkers.png"
+  },
+  {
+    "legacyId": 75,
+    "title": "Breath of Fire",
+    "image": "breath_of_fire.png"
+  },
+  {
+    "legacyId": 76,
+    "title": "Bust a Move",
+    "image": "bust_a_move.png"
+  },
+  {
+    "legacyId": 77,
+    "title": "Castlevania - Dracula X",
+    "image": "castlevania_dracula_x.png"
+  },
+  {
+    "legacyId": 78,
+    "title": "Choplifter III - Rescue Survive",
+    "image": "choplifter_III_rescue_survive.png"
+  },
+  {
+    "legacyId": 79,
+    "title": "Daffy Duck - The Marvin Missions",
+    "image": "daffy_duck_the_marvin_missions.png"
+  },
+  {
+    "legacyId": 80,
+    "title": "Dragon - The Bruce Lee Story",
+    "image": "dragon_the_bruce_lee_story.png"
+  },
+  {
+    "legacyId": 81,
+    "title": "Dragon Ball Z - Ultime Menace",
+    "image": "dragonball_z_ultime_menace.png"
+  },
+  {
+    "legacyId": 82,
+    "title": "Dragon Knight 4",
+    "image": "dragon_knight_4.png"
+  },
+  {
+    "legacyId": 83,
+    "title": "Earthworm Jim",
+    "image": "earthworm_jim.png"
+  },
+  {
+    "legacyId": 84,
+    "title": "F-Zero",
+    "image": "fzero.png"
+  },
+  {
+    "legacyId": 85,
+    "title": "Fatal Fury",
+    "image": "fatal_fury.png"
+  },
+  {
+    "legacyId": 86,
+    "title": "FIFA '98 - Road to World Cup",
+    "image": "fifa_98_road_to_world_cup.png"
+  },
+  {
+    "legacyId": 87,
+    "title": "Goof Troop",
+    "image": "goof_troop.png"
+  },
+  {
+    "legacyId": 88,
+    "title": "Gradius III",
+    "image": "gradius_III.png"
+  },
+  {
+    "legacyId": 89,
+    "title": "Hook",
+    "image": "hook.png"
+  },
+  {
+    "legacyId": 90,
+    "title": "Samourai Shodown",
+    "image": "samourai_shodown.png"
+  },
+  {
+    "legacyId": 91,
+    "title": "Final Fantasy II",
+    "image": "final_fantasy_II.png"
+  },
+  {
+    "legacyId": 92,
+    "title": "Final Fight Guy",
+    "image": "final_fight_guy.png"
+  },
+  {
+    "legacyId": 93,
+    "title": "Flashback",
+    "image": "flashback.png"
+  },
+  {
+    "legacyId": 94,
+    "title": "Garou Densetsu Special",
+    "image": "garou_densetsu_special.png"
+  },
+  {
+    "legacyId": 95,
+    "title": "Ghoul Patrol",
+    "image": "ghoul_patrol.png"
+  },
+  {
+    "legacyId": 96,
+    "title": "Gunforce - Battle Fire",
+    "image": "gunforce.png"
+  },
+  {
+    "legacyId": 97,
+    "title": "Harvest Moon",
+    "image": "harvest_moon.png"
+  },
+  {
+    "legacyId": 98,
+    "title": "Hello! Pac-Man",
+    "image": "hello_pac_man.png"
+  },
+  {
+    "legacyId": 99,
+    "title": "Hurricanes",
+    "image": "hurricanes.png"
+  },
+  {
+    "legacyId": 100,
+    "title": "Illusion of Gaia",
+    "image": "illusion_of_gaia.png"
+  },
+  {
+    "legacyId": 101,
+    "title": "Illusion of Time",
+    "image": "illusion_of_time.png"
+  },
+  {
+    "legacyId": 102,
+    "title": "Indiana Jones : Greatest Adventures",
+    "image": "indiana_jones_greatest_adventures.png"
+  },
+  {
+    "legacyId": 103,
+    "title": "Iron Commando - Koutetsu no Senshi",
+    "image": "iron_commando_koutetsu_no_senshi.png"
+  },
+  {
+    "legacyId": 104,
+    "title": "Itchy & Scratchy",
+    "image": "itchy_cratchy.png"
+  },
+  {
+    "legacyId": 105,
+    "title": "James Bond Jr.",
+    "image": "james_bond_jr.png"
+  },
+  {
+    "legacyId": 106,
+    "title": "Joe & Mac",
+    "image": "joe_mac.png"
+  },
+  {
+    "legacyId": 107,
+    "title": "Justice League Task Force",
+    "image": "justice_league_task_force.png"
+  },
+  {
+    "legacyId": 108,
+    "title": "Killer Instinct",
+    "image": "killer_instinct.png"
+  },
+  {
+    "legacyId": 109,
+    "title": "Knights of the Round",
+    "image": "knights_of_the_round.png"
+  },
+  {
+    "legacyId": 110,
+    "title": "Legend",
+    "image": "legend.png"
+  },
+  {
+    "legacyId": 111,
+    "title": "Skyblazer",
+    "image": "skyblazer.png"
+  },
+  {
+    "legacyId": 112,
+    "title": "Mystic Quest",
+    "image": "mystic_quest.png"
+  },
+  {
+    "legacyId": 113,
+    "title": "Bandits",
+    "image": "bandits.png"
+  },
+  {
+    "legacyId": 114,
+    "title": "Shufflepuck Cafe",
+    "image": "shufflepuck_cafe.png"
+  },
+  {
+    "legacyId": 115,
+    "title": "Curse of Ra",
+    "image": "curse_of_ra.png"
+  },
+  {
+    "legacyId": 116,
+    "title": "Armed Police Batrider",
+    "image": "armed_police_batrider.png"
+  },
+  {
+    "legacyId": 117,
+    "title": "ESP Ra.De.",
+    "image": "esp_ra_de.png"
+  },
+  {
+    "legacyId": 118,
+    "title": "Change Air Blade",
+    "image": "change_air_blade.png"
+  },
+  {
+    "legacyId": 119,
+    "title": "All Point Bulletin",
+    "image": "all_point_bulletin.png"
+  },
+  {
+    "legacyId": 120,
+    "title": "Armored Car",
+    "image": "armored_car.png"
+  },
+  {
+    "legacyId": 121,
+    "title": "Legend of Zelda - Minish Cap",
+    "image": "legend_of_zelda_the_minish_cap.png"
+  },
+  {
+    "legacyId": 122,
+    "title": "3 Ninjas Kick Back",
+    "image": "3_ninjas_kick_back.png"
+  },
+  {
+    "legacyId": 123,
+    "title": "3d  Worldrunner",
+    "image": "3d_worldrunner.png"
+  },
+  {
+    "legacyId": 124,
+    "title": "8 Eyes",
+    "image": "8_eyes.png"
+  },
+  {
+    "legacyId": 125,
+    "title": "Actraiser 2",
+    "image": "actraiser_2.png"
+  },
+  {
+    "legacyId": 126,
+    "title": "Addams Family Values",
+    "image": "addams_family_values.png"
+  },
+  {
+    "legacyId": 127,
+    "title": "Addams Family",
+    "image": "addams-family.png"
+  },
+  {
+    "legacyId": 128,
+    "title": "Aero the Acro-Bat 2",
+    "image": "aero_the_acro-bat_2.png"
+  },
+  {
+    "legacyId": 129,
+    "title": "Air Fortress",
+    "image": "air_fortress.png"
+  },
+  {
+    "legacyId": 130,
+    "title": "Alien 3",
+    "image": "alien_3.png"
+  },
+  {
+    "legacyId": 131,
+    "title": "Alien Syndrome",
+    "image": "alien_syndrome.png"
+  },
+  {
+    "legacyId": 132,
+    "title": "Alpha Mission 2",
+    "image": "alpha_mission_2.png"
+  },
+  {
+    "legacyId": 133,
+    "title": "American Tail an Fievel Goes West",
+    "image": "american_tail_an_fievel_goes_west.png"
+  },
+  {
+    "legacyId": 134,
+    "title": "Ardy Lightfoot",
+    "image": "ardy_lightfoot.png"
+  },
+  {
+    "legacyId": 135,
+    "title": "Astyanax",
+    "image": "astyanax.png"
+  },
+  {
+    "legacyId": 136,
+    "title": "Back to the Future",
+    "image": "back_to_the_future.png"
+  },
+  {
+    "legacyId": 137,
+    "title": "Bad Dudes",
+    "image": "bad_dudes.png"
+  },
+  {
+    "legacyId": 138,
+    "title": "Batman the Video Game",
+    "image": "batman_the_video_game.png"
+  },
+  {
+    "legacyId": 139,
+    "title": "Battle Chess",
+    "image": "battle_chess.png"
+  },
+  {
+    "legacyId": 140,
+    "title": "Bionic Commando",
+    "image": "bionic_commando.png"
+  },
+  {
+    "legacyId": 141,
+    "title": "Blades of Steel.png",
+    "image": "blades_of_steel.png"
+  },
+  {
+    "legacyId": 142,
+    "title": "Blaster Master",
+    "image": "blaster_master.png"
+  },
+  {
+    "legacyId": 143,
+    "title": "Blues Journey",
+    "image": "blues_journey.png"
+  },
+  {
+    "legacyId": 144,
+    "title": "Bubble Bobble",
+    "image": "bubble_bobble.png"
+  },
+  {
+    "legacyId": 145,
+    "title": "Chip'n Dale: Rescue Rangers",
+    "image": "chipn-dale_rescue_rangers.png"
+  },
+  {
+    "legacyId": 146,
+    "title": "Dig Dug",
+    "image": "dig_dug.png"
+  },
+  {
+    "legacyId": 147,
+    "title": "Eight Man.png",
+    "image": "eight_man.png"
+  },
+  {
+    "legacyId": 148,
+    "title": "Savage Reign",
+    "image": "savage_reign.png"
+  },
+  {
+    "legacyId": 149,
+    "title": "Shock Troopers 2nd Squad",
+    "image": "shock_troopers_2nd_squad.png"
+  }
+]

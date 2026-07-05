@@ -18,20 +18,20 @@ const port = Number(process.env.PORT ?? 3001);
 app.use(cors());
 app.use(express.json());
 
-app.get("/api/settings/:level", async (req, res) => {
+app.get("/api/settings/:level", (req, res) => {
   try {
     const level = Number(req.params.level);
-    const settings = await getSettings(level);
+    const settings = getSettings(level);
     res.json(settings);
   } catch {
     res.status(400).json({ error: "Niveau invalide" });
   }
 });
 
-app.post("/api/games/session", async (req, res) => {
+app.post("/api/games/session", (req, res) => {
   try {
     const level = Number(req.body.level);
-    const session = await startGameSession(level);
+    const session = startGameSession(level);
     res.json(session);
   } catch {
     res.status(400).json({ error: "Impossible de démarrer la session" });

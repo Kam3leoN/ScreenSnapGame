@@ -1,6 +1,6 @@
 {
   "installCommand": "npm install",
-  "buildCommand": "npm run copy:assets && npm run build",
+  "buildCommand": "npm run generate:games && npm run copy:assets && npm run build",
   "outputDirectory": "client/dist",
   "framework": null,
   "rewrites": [
